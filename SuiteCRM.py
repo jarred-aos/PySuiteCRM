@@ -238,7 +238,7 @@ class Module:
         result = []
         for page in range(1, pages):
             url = f'/module/{self.module_name}?page[number]={page}&page[size]={record_per_page}'
-            result.extend(self.suitecrm.request(f'{self.suitecrm.baseurl}{url}', 'get'))
+            result.append(self.suitecrm.request(f'{self.suitecrm.baseurl}{url}', 'get'))
         return result
 
     def update(self, record_id: str, **attributes) -> dict:
