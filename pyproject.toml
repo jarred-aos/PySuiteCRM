@@ -1,0 +1,13 @@
+[project]
+name = "PySuiteCRM"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Russell Juma", email = ""}
+]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "oauthlib (~=3.2.2)",
+    "requests_oauthlib (~2.0.0)",
+]
